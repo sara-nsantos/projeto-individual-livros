@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyre</title>
+    <link rel="shortcut icon" href="assets/img/icon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/carrossel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="assets/img/logo-header.png" alt="logo página" width="86" height="74">
+            <ul class="navbar">
+                <a href="index.html"><li>Inicial</li></a>
+                <a href="sobre-nos.html"><li>Sobre nós</li></a>
+                <a href="index.html"><li>Indicações</li></a>
+                <a href="fale.html"><li>Fale conosco</li></a>
+            </ul>
+            <div class="header-button">
+                <a href="login.html"><button class="button-login">Login</button></a>
+                <a href="cadastro.html"><button>Cadastre-se</button></a>
+            </div>
+        </div>
+    </div>
+        
+    <main>
+        <section class="box-information">
+            <div class="box-main">
+                <div class="box-content">
+                    <h1>Descubra o <strong>universo</strong><br>das <strong>palavras</strong></h1>
+                    <span>A leitura expande horizontes e enriquece a <br> alma, transforma mentes.</span>
+                    <a href="login.html"><button>Cadastre-se</button></a>
+                </div>
+                <div class="img-books">
+                    <img src="assets/img/books.jpg" alt="">
+                </div> 
+            </div>
+        </section>
+        
+        <section class="box-values">
+            <div class="values-content">
+                <h1>Meus valores</h1>
+                <p>Valores aos quais eu acredito sendo uma leitora</p>
+                <div class="caixinha">
+                    <div class="caixinha-information">
+                        <img src="assets/img/education.png" width="120px" height="120px" alt="Livro aberto">
+                        <h1>Educação</h1>
+                        <p>Educação de qualidade é vital para o avanço da sociedade.</p>
+                    </div>
+                    
+                    <div class="caixinha-information" id="box">
+                        <img src="assets/img/healthcare.png" width="120px" height="120px" alt="Símbolo de desigualdade">
+                        <h1>Bem-estar</h1>
+                        <p>Livros educam, inspiram e desafiam, promovendo empatia e igualdade.</p>
+                    </div>
+                    
+                    <div class="caixinha-information" id="box1">
+                        <img src="assets/img/cultural-diversity.png" width="120px" height="120px" alt="Livro aberto">
+                        <h1>Cultura</h1>
+                        <p>Educação de qualidade é vital para o avanço da sociedade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="onu">
+            <div class="content-onu">
+                <div class="logo-onu">
+                    <img src="assets/img/onu_icon.svg" alt="logo da ONU" height="330" width="450">
+                </div>
+                <div class="text-content">
+                    <h1>Ligação com a ONU</h1>
+                    <p>O projeto identifica-se com alguns dos pilares da ONU. A Organização das Nações Unidas (ONU) é uma organização 
+                        internacional fundada em 1945 com o objetivo de promover a cooperação internacional e resolver problemas globais.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="text">
+                <h1>Indicações de livros</h1>
+                <p>Algumas citações que me marcaram</p>
+            </div>
+            <section class="books mySwiper">
+                <div class="books-container swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/gente-ansiosa.jpg" alt="foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                "É por isso que devemos sempre ser gentis com as outras pessoas, mesmo com as idiotas, 
+                                porque nunca se sabe o quão pesado é o fardo delas." <strong>p. 115</strong></p>
+                            <h4>Gente Ansiosa</h4>
+                        </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/torto-arado.jpg" alt="foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                “O povo vagou de terra em terra pedindo abrigo, passando fome, se sujeitando 
+                                a trabalhar por nada. Se sujeitando a trabalhar por morada. A mesma escravidão de antes fantasiada de liberdade. Mas que liberdade?" <strong>p. 194</strong></p>
+                            <h4>Torto Arado</h4>
+                        </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/tudo-rio.jpg" alt="foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                “[...] O sofrimento vem sozinho, tem pernas, mais cedo ou mais tarde ele aparece; o que a gente tem de buscar é a alegria, essa se 
+                                esconde delicada na correria dos dias, não se oferece de pronto, quer ser encontrada, surpreendida, amada." <strong>p. 111</strong></p>
+                            <h4>Tudo é Rio</h4>
+                        </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/filha-perdida.jpg"foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                “As coisas mais difíceis de falar são as que nós mesmos não conseguimos entender." <strong>p. 12</strong></p>
+                            <h4>A Filha Perdida</h4>
+                        </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/sol-todos.jpeg" alt="foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                “[…] Queria que você a conhecesse um pouco, soubesse o que é a verdadeira coragem, em vez de pensar que coragem é um homem com uma arma na mão. Coragem é fazer uma 
+                                coisa mesmo estando derrotado antes de começar – prosseguiu Articus. –  E mesmo assim ir até o fim, apesar de tudo. Você raramente vai vencer, mas às vezes vai conseguir." <strong> p. 144</strong></p>
+                            <h4>O Sol é para Todos</h4>
+                        </div>
+                    </div>
+    
+                    <div class="slide swiper-slide">
+                        <div class="capa"><img src="assets/img/books/capitaes-areia.jpg" alt="foto do livro"></div>
+                        <div class="information-books">
+                            <i class="bi bi-quote"></i>
+                            <p class="citation-books">
+                                “Lá fora é a liberdade e o sol. A cadeia, os presos na cadeia, a surra ensinaram a Pedro Bala que a liberdade é o bem maior do mundo.  Agora sabe que não foi 
+                                apenas para que sua história fosse contada no cais, no mercado, na Porta do Mar, que seu pai morrera pela liberdade. A liberdade é como o sol. É o bem maior do mundo." <strong>p. 239</strong></p>
+                            <h4>Capitães da Areia</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next" style="color: #164C5D;"></div>
+                <div class="swiper-button-prev" style="color: #164C5D;"></div>
+                <div class="swiper-pagination"></div>
+            </section>
+        
+        <section class="resenha">
+            <div class="box-resenha">
+                <h1>Resenha do livro</h1>
+                <p>Olhos D'Água</p>
+                 <h2 class="subtitulo">É um choque de realidade!</h2>
+                <div class="resenha-content">
+                    <p class="resenha-b">São histórias que refletem a dura realidade cotidiana. Os contos são breves, mas profundos e impactantes, cada um revelando as jornadas das mulheres, com suas lutas, sonhos, dores e triunfos em meio a uma realidade marcada pela desigualdade, violência e discriminação. 
+                        A autora aborda uma variedade de temas, como maternidade, solidão, racismo, pobreza e resistência, apresentando personagens complexos e multifacetados que enfrentam desafios diários com coragem e determinação. A obra não apenas oferece uma visão perspicaz da realidade brasileira, 
+                        mas também representa um ato de resistência e celebração da vida, da resiliência e da humanidade das mulheres negras. É uma obra que emociona, inspira e provoca reflexão, convidando o leitor a olhar para além das aparências e reconhecer a beleza e a força nas experiências das mulheres marginalizadas. Foi necessário fazer pausas para retomar a leitura.</p>
+                    <!-- <h2 class="subtitulo">É um choque de realidade</h2> -->
+                    <div class="img-book">
+                        <img src="assets/img/books/eyes-water.jpg" alt="capa do livro 'Olhos D'Água">
+                        <h2>Olhos D'Água</h2>
+                        <h3>Conceição Evaristo</h3>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <img src="assets/img/logo-footer.png" alt="Logo da pagina" height="150px">
+                    <p>It's all about your dreams.</p>
+                </div>
+                
+                <ul class="footer-list">
+                    <li>
+                        <h3>Navegar</h3>
+                    </li>
+                    <li>
+                        <a href="index.html" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Indicações</a>
+                    </li>
+                    <li>
+                        <a href="sobre-nos.html" class="footer-link">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="fale.html" class="footer-link">Fale conosco</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <h3>Acessar</h3>
+                    </li>
+                    <li>
+                        <a href="login.html" class="footer-link">Login</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html" class="footer-link">Cadastrar</a>
+                    </li>
+                </ul>
+                <div id="footer_social_media">
+                    <a href="https://instagrao.vercel.app/" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/sara-nsantos" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div id="footer_copyright">
+                Eyre &#169; 2023 all rights reserved
+            </div>
+        </footer>
+        
+        <script src="scr/js/swiper-bundle.min.js"></script>
+        <script src="scr/js/carrossel.js"></script>
+    </body>
+</html>

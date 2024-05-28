@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Fale conosco</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        .contant-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 4%;
+            gap: 6.25rem;
+        }
+
+        .img-photo img {
+            border-radius: 1.25rem;
+        }
+
+        .contant-us {
+            color: #164C5D;
+        }
+        
+        .contant-content h1 {
+            font-size: 2.625rem; /* 42px */
+            font-weight: bold;
+            font-family: "PT Serif", serif; 
+            margin-bottom: 1.875rem; /* 30px */
+        }
+
+        .contant-content h4 {
+            font-weight: 500;
+            font-size: 1.125rem; /* 18px */
+            margin-bottom: 0.625rem; /* 10px */
+        }
+        
+        input {
+            width: 35rem;
+            box-sizing: border-box;
+            font-weight: 100;
+            padding: 1.25rem;
+            margin: 0.630rem;
+            background-color: transparent;
+            border: 0.14rem solid #164C5D; /* 2.23px */
+            border-radius: 1.25rem; /* 20px */
+        }
+        
+        #sem-borda {
+            padding: 0.9375rem 0 9.375rem 1.25rem; /* 15px 0 150px 20px */
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #164d5dcc;
+            font-weight: 100;
+        }
+
+        #button {
+            width: 10rem;
+            padding: 0.9735rem;
+        }
+
+        .header img {
+            width: 4.875rem; /* 78px */
+            height: 4.5rem; /* 72px */
+        }
+
+        .header-button button {
+            padding: 0.625rem 1.25rem; /* 10px 20px */
+            border-radius: 0.625rem; /* 10px */
+        }
+
+        #footer_contacts img {
+            height: 9.375rem; /* 150px */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="assets/img/logo-header.png" alt="Logo">
+            <ul class="navbar">
+                <li><a href="index.html">Inicial</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="index.html">Quiz</a></li>
+                <li><a href="fale.html">Fale conosco</a></li>
+            </ul>
+            <div class="header-button">
+                <a href="login.html"><button class="button-login">Login</button></a>
+                <a href="cadastro.html"><button>Cadastre-se</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <section class="contant">
+        <div class="contant-content">
+            <div class="img-photo">
+                <img src="assets/img/photo.jpeg" alt="fundo livros" style="height: 43.75rem; width: 37.5rem;"> <!-- 700px e 600px -->
+            </div>
+            <div class="contant-us">
+                <h1>Contate-nos</h1>
+                <h4>Deixe-nos uma mensagem.</h4>
+                <input type="text" placeholder="Nome"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="text" id="sem-borda" placeholder="Mensagem"><br>
+                <button id="button">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="assets/img/logo-footer.png" alt="Logo da página">
+                <p>It's all about your dreams.</p>
+            </div>
+            
+            <ul class="footer-list">
+                <li><h3>Navegar</h3></li>
+                <li><a href="index.html" class="footer-link">Home</a></li>
+                <li><a href="#" class="footer-link">Quiz</a></li>
+                <li><a href="sobre-nos.html" class="footer-link">Sobre nós</a></li>
+                <li><a href="fale.html" class="footer-link">Fale conosco</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li><h3>Acessar</h3></li>
+                <li><a href="login.html" class="footer-link">Login</a></li>
+                <li><a href="cadastro.html" class="footer-link">Cadastrar</a></li>
+            </ul>
+
+            <div id="footer_social_media">
+                <a href="https://instagrao.vercel.app/" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/sara-nsantos" class="footer-link" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            Eyre &#169; 2023 todos os direitos reservados
+        </div>
+    </footer>
+</body>
+</html>

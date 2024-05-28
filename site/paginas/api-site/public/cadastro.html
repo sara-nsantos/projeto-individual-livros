@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assets/img/icon-logo.png" type="image/x-icon">
+<link rel="stylesheet" href="./css/login.css">
+
+<script src="./js/funcoes.js"></script>
+
+<title>Cadastro | Eyre</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Registrar</h1>
+      <p>Comece a sua jornada conosco</p>
+      <div class="input-box">
+        <input id="nome_user" type="email" placeholder="Nome" required />
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">            
+        <input id="email_user" type="email" placeholder="Email" required />
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input id="senha_user" type="password" placeholder="Senha" required />
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="input-box">
+        <input id="confirmacao_user" type="password" placeholder="Confirmar senha" required />
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <form class="select-book">
+        <label>Livros</label><br>
+        <select name="livros" id="quadros_user" required>
+          <option value="nd" disabled selected>Selecione um livro</option>
+          <option value="1">Dom Quixote</option>
+          <option value="2">O Pequeno Príncipe</option>
+          <option value="3">Memórias Póstumas de Brás Cubas</option>
+          <option value="4">Harry Potter e a Pedra Filosofal</option>
+          <option value="5">O Senhor dos Anéis</option>
+          <option value="6">Orgulho e Preconceito</option>
+          <option value="7">O Sol é para Todos</option>
+          <option value="8">1984</option>
+          <option value="9">Cem anos de solidão</option>
+          <option value="10">Crime e Castigo</option>
+        </select>
+      </form>
+      <button class="btn" onclick="cadastrar()">Cadastrar</button>
+      <div class="register-link">
+        <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+      </div>
+      <div id="div_aguardar" class="loading-div">
+        <img src="https://c.tenor.com/Osta2udXiBoAAAAd/vincent-van-gogh-art.gif" id="loading-gif">
+    </div>
+
+    <div id="div_erros_login">
+    </form>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  function cadastrar() {
+    aguardar();
+
+    //  Criação das variáveis - aula Algoritmos
+    var nomeVar = nome_user.value;
+    nomeVar = nomeVar.toLowerCase();
+    var emailVar = email_user.value;
+    emailVar = emailVar.toLowerCase();
+    var senhaVar = senha_user.value;
+    var confirmacaoSenhaVar = confirmacao_user.value;
+    var quadrosVar = quadros_user.value;
+
+    console.log(emailVar, nomeVar)
+
+    //  Validações, aulas de algoritmo... if, else if
+    if (nomeVar.length < 3) {
+      alert("Nome muito curto")
+    } else if (emailVar.indexOf("@") == -1) {
+      alert("Seu email não possui '@'")
+    } else if (emailVar.indexOf(".com") == -1) {
+      alert("Seu email não possui '.com'")
+    } else if (senhaVar.length < 8) {
+      alert("Senha muito curta! 8 caracteres no mínimo")
+    } else if (confirmacaoSenhaVar != senhaVar) {
+      alert("Senhas não coincidem")
+    } else if (emailVar.startsWith("@") || emailVar.startsWith(".")) {
+      alert("Seu email não pode iniciar com caracteres especiais")
+    } else if (quadrosVar == "nd") {
+      alert("Você deve selecionar um quadro.")
+    } else {
+
+
+      fetch("/usuarios/cadastrar", {  //  buscando os dados pela rota de cadastrar 
+        method: "POST", //  Método post, estou enviando
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({  //  Meu json, com os dados que eu vou precisar para poder cadastrar o usuário e mandar pro banco
+          nome: nomeVar,  //  Propriedades dos objs
+          email: emailVar,
+          senha: senhaVar,
+          quadros: quadrosVar,
+        })
+      }).then(function (resposta) {
+
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {  //  Se estiver tudo certo, ele vai cadastrar e exibir um alert
+          window.alert(`Usuário cadastrado com sucesso!
+                                Bem-vindo ${nomeVar} :)`);
+          window.location = "login.html";
+          finalizarAguardar();
+        } else {
+          throw ("Houve um erro ao tentar realizar o cadastro!");
+        }
+      }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+      });
+    }
+  }
+</script>

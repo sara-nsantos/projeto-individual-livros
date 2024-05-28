@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "PT Serif", serif; */
+/* font-family: "Poppins", sans-serif; */
+
+/* Paleta de cores */
+:root {
+    --blue: #164C5D;
+    --bluezinho: #859AA0;
+    --brow-primary: #271500;
+    --brown: #7F5E3A;
+    --rose: #E0CEBA;
+    --bege: #FFFAF1;
+    --white: #FFFFFF;
+    --cinza-texto: #21272A;
+}
+
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif; 
+    background-color: var(--bege);
+    color: var(--brow-primary);
+}
+
+/* INÍCIO DO HEADER  */
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+/* Estilos do header */
+.header {
+    padding: 0.625rem;
+    width: 100%;
+    z-index: 1000;
+    position: relative; /* Necessário para o posicionamento do ::after */
+    background-color: var(--bege);
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Coloca a linha na parte inferior do .header */
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 8rem); /* Ajuste conforme necessário */
+    height: 1px; 
+    background-color: var(--rose);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    align-items: center;
+    list-style: none;
+    color: var(--blue);
+}
+
+.navbar li {
+    font-size: 1rem;
+    position: relative;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5625rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.1875rem;
+    background-color: var(--blue);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.header .container {
+    justify-content: space-between;
+}
+/* FIM DO HEADER */
+
+/* Definições button login */
+button.button-login {
+    background-color: transparent;
+    border: 0.12rem solid var(--blue);
+    border-radius: 0.8125rem;
+    color: var(--blue);
+    font-weight: 400;
+}
+
+button.button-login:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+/* Definição butão */
+button {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+    margin: 0.625rem 1.375rem;
+    border-radius: 0.813rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, transform 0.4s;
+}
+
+button:hover {
+    background-color: #266072;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* CONTEUDO INICIAL - COM FOTO */
+.box-main {
+    margin: 3.75rem 0 3.75rem 3.75rem; /* superior -direita - inferior - esquerda */
+    width: 93%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5.625rem 0 5.625rem 0;
+    background-color: var(--rose);
+    background-color: rgba(224, 206, 186, 0.13); 
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    flex: 1; /* Ocupar todo o espaço disponível */
+}
+
+.box-content h1 {
+    font-family: "PT Serif", serif; 
+    font-size: 3.4375rem;
+    font-weight: 500;
+    padding-bottom: 1.25rem;
+    line-height: 4.375rem;
+}
+
+.box-content span {
+    font-family: "PT Serif", serif; 
+    font-size: 1.5625rem;
+    font-weight: 200;
+    line-height: 4.1rem;
+}
+
+.img-books img {
+    width: 29.375rem;
+    height: 37.5rem;
+    border-radius: 1.875rem 0 1.875rem 0;
+    margin: 3.125rem;
+}
+
+.box-content button {
+    margin: 2.5rem 0; 
+    width: 21.875rem;
+    height: 3.4375rem;
+}
+/* fim da section inicial */
+
+/* INÍCIO DA DIV VALORES */
+.box-values {
+    background-color: #fbf4ea18;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.values-content h1,
+.box-resenha h1,
+.text-content h1, 
+.text h1{
+    margin-top: 5px;
+    font-family: "PT Serif", serif; 
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 4.375rem;
+}
+
+.values-content p,
+.box-resenha p,
+.text p{
+    font-family: "Poppins", sans-serif; 
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2.8125rem;
+    margin-bottom: 0.9375rem;
+}
+
+/* div dos quadrados valores */
+.caixinha {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 8.75rem;
+    /* margin: 0 70px 10px 70px; */
+}
+
+.caixinha-information {
+    width: 21.25rem;
+    height: 27.5rem;
+    background-color: #FBF4EA;
+    margin: 0.625rem;
+    border-radius: 3.125rem 0.1875rem 3.125rem 0.1875rem;
+    transition: transform 0.5s ease-in-out;transition: transform 0.3s ease;
+}
+
+.caixinha-information:hover {
+    background-color: #e0ceba3d;
+    transform: translateY(20px);
+}
+
+#box {
+    border-radius: 3.125rem;
+}
+#box1 {
+    border-radius: 0.1875rem 3.125rem 0.1875rem 3.125rem;
+}
+
+.caixinha-information img {
+    margin-top: 3.125rem;
+}
+
+.caixinha-information h1 {
+    margin-top: 3.125rem;
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: var(--blue);
+    line-height: 1.875rem;
+}
+
+.caixinha-information p {
+    font-size: 1.375rem;
+    font-weight: 300;
+    padding: 1.25rem;    
+    text-align: center;
+    line-height: 2.1875rem;
+}
+
+/* Inicio seção ONU*/
+.content-onu {
+    margin-bottom: 5%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-height: 63rem; 
+}
+
+.logo-onu img {
+    border-radius: 10%;
+    margin-top: 10%;
+    border-radius: 70px 10px 70px 10px ;
+}
+
+.text-content {
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+
+.text-content h1 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.text-content p {
+    /* background-color: #859AA0; */
+    font-size: 20px;
+    text-align: justify;
+    padding: 0.925rem;
+    width: 40rem;
+    margin: 0 1.50rem;
+    padding: 1.5rem;
+}
+/* Estilos para a seção de resenha */
+.resenha {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+    margin-bottom: 5%;
+}
+
+.box-resenha {
+    /* margin: 3.75rem 0 3.75rem 3.75rem;  */
+    margin: 0 5%;
+}
+.box-resenha h1,p {
+    text-align: center;
+    color: var(--brow-primary);
+}
+
+.resenha-content {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 95rem;
+    max-height: 40rem;
+    padding: 2px;
+    background-color: var(--blue);
+    border-radius: 0 0 5rem 0.625rem;
+}
+
+.resenha-content .resenha-b {
+    text-align: justify;
+    margin: 2% 6%;
+    font-size: 18px;
+    max-height: 800px;
+    color: var(--white);
+}
+
+/* definicoes do tema da resenha */
+.subtitulo {
+    font-family: "PT Serif", serif; 
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1.5%;
+     max-width: 95rem;
+    background-color: var(--blue);
+    border-radius: 5rem 0.625rem 0 0;
+}
+
+.img-book {
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 3.5rem;
+}
+
+.img-book img {
+    margin: 1.25rem;
+    height: 32.125rem;
+    width: 25rem;
+    max-width: 25rem;
+    border-radius: 4.375rem 0.3125rem 4.375rem 0.3125rem;
+}
+
+.img-book h2 {
+    font-size: 1.57rem;
+    font-weight: 600;
+}
+
+.img-book h3 {
+    font-size: 1.125rem;
+    font-weight: 200;
+    margin-bottom: 1.15rem;
+    
+}
+/* fim da seção */
+
+
+/* DEFINIÇÕES - FOOTER*/
+footer {
+    width: 100%;
+    color: #FFFFFF; 
+}
+
+.footer-link {   
+    font-family: "Poppins", sans-serif; 
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#footer_content {
+    font-family: "PT Serif", serif; 
+    font-size: 1.25rem;
+    font-weight: 300;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 5.5rem;
+}
+
+#footer_contacts  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.0625rem;
+}
+
+#footer_contacts p {
+    font-family: "Poppins", sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: var(--white); 
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF; 
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.60rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    margin-left: 12.5rem;
+}
+
+.footer-list .footer-link {
+    color: #FFFFFF; 
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #79c4f6;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    position: relative;
+}
+
+#footer_copyright::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 190px); /* Ajuste conforme necessário */
+    height: 0.1px;
+    background-color: #FFFFFF; 
+}
+
+   /* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: .63rem;
+    /* largura da barra de rolagem */
+}
+
+/* Estilos para a alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    /* cor da alça */
+    border-radius: .7rem;
+    /* borda arredondada */
+}
+
+/* Estilos para a alça da barra de rolagem quando passa o mouse por cima */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1d5b6e;
+    /* cor da alça quando passa o mouse por cima */
+}
+
+/* Estilos para a pista da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    /* cor da pista */
+}
