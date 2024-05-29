@@ -15,21 +15,25 @@
     --white: #FFFFFF;
     --cinza-texto: #21272A;
 }
+body {
+    color: var(--brow-primary);
+}
 
 .about-me {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     flex-direction: column;
 }
 
 .about {
-    background-color: blue;
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin: 3.125rem;
     max-height: 43.75rem;
     border-radius: 90px 0 90px 0;
+    background-color: var(--rose);
+    background-color: rgba(224, 206, 186, 0.13); 
 }
 
 .about-me-information {
@@ -47,8 +51,13 @@
 }
 
 .about-me-content {
-    background-color: #E0CEBA;
     max-height: 387.5rem;
+    text-align: justify;
+}
+.space {
+    /* background-color: #E0CEBA; */
+      line-height: .1rem;
+      line-height: 100px;
 }
 
 .about-me-content h1 {
@@ -66,46 +75,6 @@
     line-height: 2.5rem;
     margin-bottom: 0.0625rem;
 }
-.about-us {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    font-family: "PT Serif", serif;
-}
-
-.about-us h1 {
-    font-family: "PT Serif", serif;
-    font-size: 40px;
-    text-align: center;
-    color: #271500;
-}
-
-.about-us-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1% 10%;
-    background-color: var(--blue);
-    max-height: 30rem;
-    max-width: 80rem;
-    border-radius: 5rem 0.625rem 5rem 0.625rem;
-}
-
-.about-us-content p {
-    font-family: "Poppins", sans-serif; 
-    font-size: 24px;
-    font-weight: 300;
-    text-align: justify;
-    margin: 5%;
-    color: var(--white);
-}
-
-.about-us-content img {
-    margin: 1%;
-    width: 21.875rem;
-    height: 20.625rem; 
-}
 
 /* parte do cards com fotos */
 .card-about {
@@ -113,36 +82,34 @@
    flex-direction: column;
    align-items: center;
    font-family: "PT Serif", serif;
-   font-size: 30px;
-   color: #271500;
+   font-size: 28px;
    margin-top: 2rem;
 }
 
 .card-about .sub-about {
-    font-size: 22px;
-    color: var(--brow-primary);
     font-family: "Poppins", sans-serif; 
+    font-size: 22px;
 }
 
 .cardizinho {
-    background-color: saddlebrown;
     display: flex;
     flex-direction: row;
     width: 100%;
     font-family: "Poppins", sans-serif; 
+    /* background-color: saddlebrown; */
 }
 
 /* definiçao do card estilo livro */
 .book {
     /* margin: 4rem 7rem 4rem 7rem; */
-    margin: 4% 8%;
+    margin: 2% 8%;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1.25rem;
     width: 18.125rem;
     height: 24.375rem;
     background-color: whitesmoke;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    -webkit-box-shadow: 12px 12px 12px var(--bluezinho);
+    box-shadow: 1px 1px 12px var(--bluezinho);
     -webkit-transform: preserve-3d;
     -ms-transform: preserve-3d;
     transform: preserve-3d;
@@ -159,21 +126,26 @@
     justify-content: center;
 }
 
+.book img {
+    border-radius: 1rem;
+}
+
 .cover {
     top: 0;
     position: absolute;
-    background-color: lightgray;
+    background-color: #1e596be5; 
+    padding: 0.625rem;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1.25rem;
     cursor: pointer;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform-origin: 0;
     -ms-transform-origin: 0;
     transform-origin: 0;
-    -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    -webkit-box-shadow: 1px 1px 12px var(--bluezinho); 
+    box-shadow: 1px 1px 12px var(--bluezinho); 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,4 +169,103 @@ p {
     font-size: 18px;
     padding: 1.875rem;
     margin-left: 1.375rem;
+}
+
+/* Seção onu */
+.onu {
+    /* background-color: #E0CEBA; */
+    margin: 4% 0 2% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+}
+
+.onu_content {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+.goals {
+
+    margin: 1rem 3rem;
+    padding: 2rem;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.onu-goals {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 1%;
+    margin: 2% 8%;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.315);
+}
+
+.onu-goals img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.9rem;
+    margin-right: 3%;
+}
+
+.objetivos {
+    display: flex;
+    flex-direction: column;
+}
+
+.objetivos h3 {
+    font-size: 1.625rem;
+    margin-top: 3%;
+}
+
+.objetivos h6 {
+    margin-top: 1%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Seção - objetivo eyre */
+.about-us {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    font-family: "PT Serif", serif;
+}
+
+.about-us h1, 
+.information_onu h1 {
+    font-family: "PT Serif", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #271500;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 10%;
+    background-color: var(--blue);
+    max-height: 30rem;
+    max-width: 80rem;
+    border-radius: 5rem 0.625rem 5rem 0.625rem;
+}
+
+.about-us-content .pag {
+    font-family: "Poppins", sans-serif; 
+    font-size: 24px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 5%;
+    color: var(--white);
+}
+
+.about-us-content img {
+    margin: 1%;
+    width: 21.875rem;
+    height: 20.625rem; 
 }
