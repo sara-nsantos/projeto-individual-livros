@@ -20,7 +20,6 @@ function entrar(email, senha) {
     return database.executar(instrucao);
 }
     //  ATRAVÉS DA VAR QUE FOI PRO JSON E VIROU OBJ (QUADROS), ADD NA QUERY DO BANCO - PROF. RAFA
-    //  CRIPTOGRAFIA NA SENHA ENSINADO PELA PROF VIVIAN - BANCO DE DADOS
 function cadastrar(nome, email, senha, quadros) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, quadros);
     var instrucao = `

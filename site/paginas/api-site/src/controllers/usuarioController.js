@@ -108,7 +108,7 @@ function cadastrar(req, res) {
             );
     }
 }
-    //  CRIAÇÃO DE FUNÇÃO - PROF'S CAIO & RAFA
+    //  CRIAÇÃO DE FUNÇÃO - PROF CAIO 
 module.exports = {
     entrar,
     cadastrar,
