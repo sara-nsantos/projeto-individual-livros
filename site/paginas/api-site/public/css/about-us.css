@@ -33,7 +33,7 @@ body {
     max-height: 43.75rem;
     border-radius: 90px 0 90px 0;
     background-color: var(--rose);
-    background-color: rgba(224, 206, 186, 0.13); 
+    background-color: rgba(224, 206, 186, 0.116); 
 }
 
 .about-me-information {
@@ -188,8 +188,7 @@ p {
 }
 
 .goals {
-
-    margin: 1rem 3rem;
+    margin: 1rem 8rem;
     padding: 2rem;
     font-size: 20px;
     text-align: justify;
@@ -248,10 +247,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 10%;
-    background-color: var(--blue);
-    max-height: 30rem;
-    max-width: 80rem;
+    margin: 2% 6%;
+    background-color: #164d5df3;
+    max-height: 28rem;
+    width: 90%;
+    /* border-bottom: 4px solid #FFFAF1; */
+    /* max-width: 80rem; */
     border-radius: 5rem 0.625rem 5rem 0.625rem;
 }
 
@@ -260,12 +261,12 @@ p {
     font-size: 24px;
     font-weight: 300;
     text-align: justify;
-    margin: 5%;
+    margin:  2% 4%;
     color: var(--white);
 }
 
 .about-us-content img {
-    margin: 1%;
-    width: 21.875rem;
-    height: 20.625rem; 
+    margin-right: 4%;
+    width: 16rem;
+    height: 14rem; 
 }
