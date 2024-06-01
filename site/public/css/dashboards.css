@@ -1,17 +1,19 @@
 /* pagina mural */
 
-*,
+
 body {
   font-family: 'Kalam', cursive;
 }
+
 h4 {
   color: black;
   font-size: 27px;
   font-weight: 600;
 }
+
 .dash-right .avisos {
   width: 100%;
-  /* border: 3px solid pink; */
+
   color: rgb(216, 216, 216);
   font-family: 'Permanent Marker', cursive;
   height: auto;
@@ -23,6 +25,7 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+
 .avisos h1 {
   color: #0B1E38;
   -webkit-text-stroke: 1px #DB901C;
@@ -142,12 +145,6 @@ h4 {
   left: 20%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* width: 75%;
-    display: flex;
-    background-color: #161618;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;*/
   }
 
 .regua {
@@ -170,10 +167,12 @@ h4 {
   display: none;
   background-color: green;
 }
+
 h2 {
   color: #0B1E38;
   font-size: 25px;
 }
+
 .item-regua {
   padding: 5px;
   width: 40%;
@@ -186,12 +185,15 @@ h2 {
   box-shadow: 5px 5px black;
   font-family: 'Permanent Marker', cursive;
 }
+
 .item-regua h4 {
   font-size: 20px;
 }
+
 .item-regua h2 {
   font-size: 20px;
 }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +244,6 @@ h2 {
   height: 30%;
   border-radius: 50px;
   margin-top: 6%;
-  /* background-color: #c7c7c7; */
 }
 
 .btns-dash {
@@ -269,17 +270,18 @@ h2 {
   background-color: #173679;
   margin: 5px;
 }
+
 .janela {
   display: flex;
   width: 100vw;
-  /* height: 100vh; */
+
 }
 
 .header-left a {
   text-decoration: none;
   color: white;
 }
-
+/* 
 .header-left {
   position: fixed;
   top: 0;
@@ -293,12 +295,12 @@ h2 {
   align-items: center;
   border-right: 5px solid #0B1E38;
   background-image: url(img/calçada.jpg);
-  /* border: 3px solid pink; */
+
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-.dash-right {
+/* .dash-right {
   display: flex;
   width: 80%;
   height: fit-content;
@@ -378,16 +380,14 @@ h2 {
 .btn-logout:hover {
   color: #1E2224;
   background-color: #D0672F;
-}
-/* pagina extra - simulador */
-.simulador {
-  color: white;
-}
+} */
+
 #img_fundo .titulo {
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
 #img_fundo .titulo h2 {
   height: 60px;
   width: 200px;

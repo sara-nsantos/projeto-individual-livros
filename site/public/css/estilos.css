@@ -19,11 +19,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: rgb(182, 147, 147);
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -109,7 +108,7 @@ body {
 
 /* usar este bloco para explicar margin e padding*/
 .social .titulo {
-  /* border: 3px solid pink; */
+
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -155,47 +154,7 @@ body {
 
 /* FOOTER */
 
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: white;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: center;
-}
-
-h4 {
-  margin: 0;
-  padding: 0;
-}
-
 /* LOGIN */
-
-.banner-login {
-  color: white;
-  height: 550px;
-  /* border: 3px solid yellow; */
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-  background-size: cover;
-}
-
-.banner-login .container {
-  height: 550px;
-  /* border: 3px solid green; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner-login {
-  color: #e6005a;
-}
 
 .banner-login .card {
   background-color: #e5e5e5;
@@ -261,7 +220,8 @@ input {
 }
 
 
-/* PAGINA DOS GRÁFICOS */
+
+/* PAGINA DOS GRÁFICOS  --------------------------- */
 .janela {
   display: flex;
   width: 100vw;
@@ -323,7 +283,6 @@ input {
   color: var(--blue);
   padding: 0.7rem 2rem;
   font-size: 1.1rem;
-  /* margin: 0.625rem 1.375rem; */
   border-radius: 0.813rem;
   border: none;
   cursor: pointer;
@@ -356,6 +315,14 @@ input {
   font-weight: 600; 
 }
 
+.btn-nav-white:hover {
+  background-color: var(--bege);
+}
+
+.btn-nav-white h3:hover {
+  color: var(--blue);
+}
+
 .btn-nav h3,
 .btn-logout h3 {
   margin: 0;
@@ -363,19 +330,20 @@ input {
 }
 
 .btn-logout {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #32b9cd;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px 15px;
-  margin-bottom: 100px;
+  background-color: var(--bege);
+  color: var(--blue);
+  padding: 0.4rem 2rem;
+  font-size: 1.2rem;
+  margin: 0.625rem 1.375rem;
+  border-radius: .5rem; 
+  border: none;
   cursor: pointer;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s;
 }
 
-/* pagina extra - simulador */
-.simulador {
-  color: white;
+.btn-logout:hover {
+  width: 70px;
+  text-align: center;
+  transition: 8s;
 }
+
