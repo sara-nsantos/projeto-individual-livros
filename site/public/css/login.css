@@ -11,7 +11,7 @@
   --cinza-texto: #21272A;
 }
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,16 +27,14 @@
   background: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
   background-position: center;
   background-size: cover;
-  position: static;
 }
 
 .wrapper {
   margin: 4% 0% 0 28%;
-  width: 40rem;
+  width: 38rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
   background-color: transparent;
   color: #fff;
   border-radius: 0.635rem;
@@ -45,6 +43,8 @@
   border: 2px solid rgba(255, 255, 255, 0.212);
   backdrop-filter: blur(25px);
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 3%;
+ position: relative;
 }
 
 .wrapper h2 {
@@ -55,8 +55,10 @@
 
 .wrapper p {
   font-size: 16px;
+  color: var(--bege);
+  margin-bottom: 8px;
 }
-
+/* definicoes do input */
 .wrapper .input-box {
   position: relative;
   width: 100%;
@@ -64,12 +66,15 @@
   margin: 0 0 3.5rem 0;
 }
 
-.div-login span {
+.text {
   font-size: 16px;
   font-weight: 700;
 }
 
 .input-box input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -84,15 +89,15 @@
 
 .input-box input::placeholder {
   color: #fff;
-
 }
 
 .input-box i {
   position: absolute;
   left: 1.25rem;
-  top: 50%;
+  top: 98%;
   transform: translateY(-50%);
   font-size: 20px;
+  color: var(--bege);
 }
 
 .wrapper .remember-forgot {
@@ -131,6 +136,7 @@
   transition: all 0.8s ease-out;
   background-color: var(--rose);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 .wrapper .btn:hover {
@@ -138,10 +144,14 @@
   color: #fff;
 }
 
+#btn-cade {
+  width: 18.75rem;
+}
+
 .wrapper .register-link {
   font-size: 14px;
   text-align: center;
-  margin: 20px 0 15px;
+  /* margin: 20px 0 0px; */
 }
 
 .register-link p a {
@@ -154,23 +164,34 @@
   color: #518485;
 }
 
-/* definicao do selecy */
+.register-link .enter {
+  margin-top: 1.5rem;
+}
 
+/* definicao do select */
 select {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   font-size: .875rem;
-  background: var(--rose); 
-  color: var(--brow-primary);
+  /* background: var(--rose);  */
+  background-color: #e0cebad2;
+  color: rgb(32, 32, 32);
   text-align: center;
   outline: none;
+  width: 100%;
+  height: 2.5rem; 
+  border-radius: 0.813rem;
+  display: flex;
+  border: none;
+  /* border: 1px solid var(--brow-primary); */
+  align-items: center;
 }
-.nd {
-  color: red;
-}
+
+
 select:hover {
-    background: linear-gradient(#FFFAF1, #E0CEBA);
+    background: #c7b8a7;
     color: var(--blue);
+    transition: 1s;
 }
 
 option {

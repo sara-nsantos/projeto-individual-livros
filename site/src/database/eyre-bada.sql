@@ -1,3 +1,5 @@
+--  Banco de dados - Eyre
+
 CREATE DATABASE IF NOT EXISTS Eyre;
 
 USE Eyre;
@@ -7,7 +9,7 @@ CREATE TABLE livros (
   livroEscolhido VARCHAR(100),
   caminhoImg VARCHAR(35),
   PRIMARY KEY (id)
-)AUTO_INCREMENT=100;
+)AUTO_INCREMENT=1;
 
 CREATE TABLE usuario (
   id INT AUTO_INCREMENT,
@@ -34,3 +36,5 @@ INSERT INTO livros (livroEscolhido, caminhoImg) VALUES
 
 SELECT * FROM livros;
 SELECT * FROM usuario;
+
+drop database Eyre;

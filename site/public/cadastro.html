@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/icon-logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/fave.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/login.css">
     <script src="./js/funcoes.js"></script>
@@ -30,27 +30,33 @@
 
   <div class="wrapper">
     <form action="">
-      <h1>Registrar</h1>
-      <p>Comece a sua jornada conosco</p>
+      <h2>Olá, seja bem-vindo</h2>
+      <p class="welcome">comece a sua jornada conosco</p>
 
       <div class="input-box">
-        <input id="nome_user" type="email" placeholder="Nome" required />
+          <span class="text">Nome:</span>       
+        <input id="nome_user" type="email" placeholder="Seu nome" required />
         <i class='bx bxs-user'></i>
       </div>
-      <div class="input-box">            
-        <input id="email_user" type="email" placeholder="Email" required />
-        <i class='bx bxs-user'></i>
+      <div class="input-box"> 
+          <span class="text">Email:</span>           
+        <input id="email_user" type="email" placeholder="Seu email" required />
+
+        <i class='bx bx-envelope'></i>
       </div>
       <div class="input-box">
-        <input id="senha_user" type="password" placeholder="Senha" required autocomplete="new-password"/>
+          <span class="text">Senha:</span>
+        <input id="senha_user" type="password" placeholder="********" required autocomplete="new-password"/>
         <i class='bx bxs-lock-alt'></i>
       </div>
       <div class="input-box">
-        <input id="confirmacao_user" type="password" placeholder="Confirmar senha" required />
+          <span class="text">Confirmar senha:</span>
+        <input id="confirmacao_user" type="password" placeholder="********" required />
         <i class='bx bxs-lock-alt'></i>
       </div>
       <form class="select-book">
-        <label>Livros</label><br>
+  
+        <span class="text">Livros:</span><br>       
         <select name="livros" id="quadros_user" required>
           <option value="nd" disabled selected>Selecione um livro</option>
           <option value="1">Dom Quixote</option>
@@ -65,11 +71,11 @@
           <option value="10">Crime e Castigo</option>
         </select>
       </form>
-      <button class="btn" onclick="cadastrar()">Cadastrar</button>
       <div class="register-link">
-        <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+        <p class="enter">Já tem uma conta? <a href="login.html">Entrar</a></p>
       </div>
-      <div id="div_aguardar" class="loading-div">
+      <button class="btn" onclick="cadastrar()" id="btn-cade">Cadastrar</button>
+      <div id="div_aguardar" class="loading-div"><br>
         <!-- <img src="https://c.tenor.com/Osta2udXiBoAAAAd/vincent-van-gogh-art.gif" id="loading-gif"> -->
     </div>
 
