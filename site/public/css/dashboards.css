@@ -25,9 +25,10 @@ body {
   /* background: url(../assets/img/photo.jpeg) no-repeat; 
     background-size: cover; */
   background-color: var(--bege);
+  background: url(https://img.freepik.com/fotos-gratis/textura-de-papelao_95678-72.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=ais);
 }
 
-/* Começoo da dashbord */
+/* Começo da dashbord */
 #myChart {
   width: 37.5rem;
   border: 1px solid rgba(216, 216, 216, 0.473);
@@ -37,9 +38,6 @@ body {
 .dash {
   display: flex;
   flex-direction: column;
-  /* width: 70%;
-  position: relative;
-  left: 30%; */
   max-width: 80%;
   width: 60%;
   position: relative;
@@ -189,7 +187,7 @@ body {
   margin-left: 20%;
   padding: 2% 2%;
   color: var(--brow-primary);
-  box-shadow: rgba(136, 165, 191, 0.548) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  box-shadow: rgba(122, 151, 177, 0.548) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 #poucoacesso {
@@ -199,6 +197,7 @@ body {
 
 #poucoacesso h2 {
   color: #FFE1E1;
+  font-weight: 700;
 }
 
 #medioacesso {
@@ -212,11 +211,12 @@ body {
 
 #muitoacesso {
   display: none;
-  background-color: #416E25;
+  background-color: #5CA55C;
 }
 
 #muitoacesso h2 {
-  color: #D0FFB2;
+  color: #d0f0bd;
+  font-weight: 700;
 }
 
 h4 {
