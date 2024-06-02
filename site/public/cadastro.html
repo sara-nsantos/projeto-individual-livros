@@ -57,7 +57,7 @@
       <form class="select-book">
   
         <span class="text">Livros:</span><br>       
-        <select name="livros" id="quadros_user" required>
+        <select name="livros" id="livros_user" required>
           <option value="nd" disabled selected>Selecione um livro</option>
           <option value="1">Dom Quixote</option>
           <option value="2">O Pequeno Príncipe</option>
@@ -90,18 +90,16 @@
   function cadastrar() {
     aguardar();
 
-    //  Criação das variáveis - aula Algoritmos
     var nomeVar = nome_user.value;
     nomeVar = nomeVar.toLowerCase();
     var emailVar = email_user.value;
     emailVar = emailVar.toLowerCase();
     var senhaVar = senha_user.value;
     var confirmacaoSenhaVar = confirmacao_user.value;
-    var quadrosVar = quadros_user.value;
+    var livrosVar = livros_user.value;
 
     console.log(emailVar, nomeVar)
 
-    //  Validações, aulas de algoritmo... if, else if
     if (nomeVar.length < 3) {
       alert("Nome muito curto")
     } else if (emailVar.indexOf("@") == -1) {
@@ -114,8 +112,8 @@
       alert("Senhas não coincidem")
     } else if (emailVar.startsWith("@") || emailVar.startsWith(".")) {
       alert("Seu email não pode iniciar com caracteres especiais")
-    } else if (quadrosVar == "nd") {
-      alert("Você deve selecionar um quadro.")
+    } else if (livrosVar == "nd") {
+      alert("Você deve selecionar um livro.")
     } else {
 
 
@@ -125,10 +123,10 @@
           "Content-Type": "application/json"
         },
         body: JSON.stringify({  //  Meu json, com os dados que eu vou precisar para poder cadastrar o usuário e mandar pro banco
-          nome: nomeVar,  //  Propriedades dos objs
+          nome: nomeVar, 
           email: emailVar,
           senha: senhaVar,
-          quadros: quadrosVar,
+          livros: livrosVar,
         })
       }).then(function (resposta) {
 

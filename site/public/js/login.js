@@ -23,7 +23,7 @@ function entrar() {
                 sessionStorage.LOGIN_USUARIO = json.login;
                 sessionStorage.NOME_USUARIO = json.nome;
                 sessionStorage.ID_USUARIO = json.id;
-                sessionStorage.FK_LIVRO = json.fkLivro;
+                sessionStorage.fkLivro = json.fkLivro;
                 
 
                 setTimeout(function () {
@@ -55,7 +55,7 @@ function validarSessao() {
     //  CRIEI UMA VARIÁVEL DE SESSÃO PARA FICAR ARMAZENADA E CONSEGUIR PUXAR PARA USAR NO MEU GRAF
     var login = sessionStorage.LOGIN_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
-    var fk = sessionStorage.FK_LIVRO;
+    var fk = sessionStorage.fkLivro;
 
     var h1Titulo = document.getElementById("h1_titulo");
 

@@ -19,8 +19,6 @@
 }  
 
 #tela_login{
-  /* display: flex;
-  flex-direction: column; */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -29,6 +27,14 @@
   background: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+:root {
+    --pastel-pink: #FFB6C1;
+    --pastel-yellow: #FDFD96;
+    --pastel-green: #77DD77;
+    --pastel-blue: #AEC6CF;
+    --pastel-purple: #CBAACB;
 }
 
 .wrapper {

@@ -20,10 +20,10 @@ function entrar(email, senha) {
     return database.executar(instrucao);
 }
 
-function cadastrar(nome, email, senha, quadros) {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, quadros);
+function cadastrar(nome, email, senha, livros) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, livros);
     var instrucao = `
-        INSERT INTO usuario (nome, email, senha, fkLivro) VALUES ('${nome}', '${email}', SHA2('${senha}',224), ${quadros});
+        INSERT INTO usuario (nome, email, senha, fkLivro) VALUES ('${nome}', '${email}', SHA2('${senha}',224), ${livros});
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
@@ -32,8 +32,8 @@ function cadastrar(nome, email, senha, quadros) {
 function plotargrafico() {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function plotargrafico():");
     var instrucao = `
-    SELECT COUNT(usuario.id) as qtd , fkLivro, quadroPreferido from usuario join 
-    quadros on quadros.id = fkLivro group by fkLivro
+    SELECT COUNT(usuario.id) as qtd, fkLivro, livroEscolhido from usuario join 
+    livros on livros.id = fkLivro group by fkLivro
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

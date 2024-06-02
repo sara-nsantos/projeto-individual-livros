@@ -80,7 +80,7 @@ function cadastrar(req, res) {
     var nome = req.body.nome;
     var email = req.body.email;
     var senha = req.body.senha;
-    var quadros = req.body.quadros;
+    var livros = req.body.livros;
 
 
     if (nome == undefined) {
@@ -90,7 +90,7 @@ function cadastrar(req, res) {
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
     } else {
-        usuarioModel.cadastrar(nome, email, senha, quadros)
+        usuarioModel.cadastrar(nome, email, senha, livros)
             .then(
                 function (resultado) {
                     res.json(resultado);

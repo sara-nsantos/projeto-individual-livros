@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/dashboards.css">
     <title>Livros dos usuários | Eyre</title>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/funcoes.js"></script>
 
@@ -69,9 +70,13 @@
                 </div><br>
             </div><br><br>
             
-            <div class="grafico" style="width: 60%; margin-left: 20%;">
+            <!-- <div class="grafico" style="width: 60%; margin-left: 20%;">
                 <canvas id="mychart"></canvas>
-            </div>
+            </div> -->
+            <div>
+  <canvas id="myChart"></canvas>
+</div>
+
 
         </div>
     </div>
@@ -79,6 +84,7 @@
 </html>
 
 <script>
+      const ctx = document.getElementById('myChart'); 
 
     img_fundo.style.backgroundImage = 'url(' + sessionStorage.CAMINHO_IMG + ')';
 
@@ -89,7 +95,7 @@
 
                 resposta.json().then(json => {
                     console.log(json)
-                    let livros = json.map(obj => obj.quadroPreferido)  // Essa variável vai buscar a propriedade "livro Preferido"  
+                    let livros = json.map(obj => obj.livroEscolhido)  // Essa variável vai buscar a propriedade "livro Preferido"  
                     console.log(livros)    //  vai percorrer o vetor e trazer apenas os elementos "livros preferidos"
                     let qtd = json.map(obj => obj.qtd)  //  Da mesma forma, esse vai buscar a quantidade de gráficos que há no site
                     console.log(qtd)
@@ -101,7 +107,7 @@
                         soma = soma + qtd[i]
                     }   //  For para "varrer meu vetor" ele vai continuar enquanto essa condição for verdadeira
                         //  O find é de "Encontrar", logo, ele vai encontrar e me trazer através do obj JSON
-                    let fks = json.find(obj => obj.fkQuadros == sessionStorage.FK_QUADROS)  //  Buscando a variável de sessão Fk, para trazer os livros fav do usuario logado
+                    let fks = json.find(obj => obj.fkLivro == sessionStorage.fkLivro)  //  Buscando a variável de sessão Fk, para trazer os livros fav do usuario logado
                     var media = (soma / qtd.length).toFixed(2); //  Op mat para fazer a métrica do Analytics
                     console.log(media)  //  Vou dividir a soma de todos os livros escolhidos e dividir pelo seu comprimento (length) assim terei a média
                     console.log(soma)   //  Após ter a média, posso trazer os alertas para o usuário
@@ -119,15 +125,15 @@
                     console.log(fks.qtd)
 
                         //  Criação do Grafico
-                    const config = {
+                     new Chart(ctx, {
                         type: 'bar',    
                         data: {
-                            labels: quadros,
-                            datasets: [ //  Dados do meu gráfico
+                            labels: livros,
+                            datasets: [ 
                                 {
-                                    label: "LIVROS PREFERIDOS DOS USUÁRIOS",   //  Esse é o meu título
-                                    data: qtd,  //  primeiro vetor - sera a quantidade dos gráficos (Preferi trazer o obj jSON) por conta que ele vai trazer apenas os que foram escolhidos, se não, teria que ser colocados todos a mão
-                                    color: "#F7DF38",   //  Daqui pra baixo, são estilizações
+                                    label: "LIVROS PREFERIDOS DOS USUÁRIOS",   
+                                    data: qtd,  
+                                    color: "#F7DF38",
                                     backgroundColor: "#304473",
                                     fontSize: 25,
                                     fontFamily: "'Permanent Marker', cursive;",
@@ -157,9 +163,10 @@
                                 },
                             }
                         }
-                    }
+                    })
                     
-                    // var myChartLine = new Chart(document.getElementById("mychart"), config);    //  Criação do chart
+                    var myChartLine = new Chart(document.getElementById("mychart"), config);   
+            
                 });
             })
     }
