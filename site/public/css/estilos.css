@@ -25,10 +25,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-}
 
 .header {
   color: #2ab6cc;
@@ -46,143 +42,6 @@ body {
   text-decoration: none;
   color: #e3b062;
 }
-
-.agora {
-  font-weight: 800;
-}
-
-.navbar {
-  width: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  color: #e3b062;
-  /* border: 3px solid green; */
-}
-
-/* BANNER */
-.banner {
-  height: 500px;
-  color: white;
-  /* border: 3px solid yellow; */
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
-  background-size: cover;
-}
-
-.banner .container {
-  /* border: 3px solid green; */
-  height: 500px;
-  display: flex;
-  align-items: center;
-}
-
-.banner p {
-  /* border: 3px solid cyan; */
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  font-size: 36px;
-  margin-left: 350px;
-}
-
-.banner span {
-  font-weight: 800;
-}
-
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
-  /* border: 3px solid yellowgreen; */
-  padding: 50px 0;
-}
-
-.social .container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  /* border: 3px solid blue; */
-}
-
-/* usar este bloco para explicar margin e padding*/
-.social .titulo {
-
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.social h2 {
-  display: flex;
-  padding: 20px;
-  background-color: white;
-  border-radius: 20px;
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  color: #e6005a;
-  margin: 0;
-  /* border: 3px solid orange; */
-}
-
-.social .boxes {
-  display: flex;
-  /* border: 3px solid blue; */
-}
-
-.social .box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  width: 33%;
-  /* border: 3px solid yellow; */
-}
-
-.social .box img {
-  width: 150px;
-  align-self: center;
-}
-
-.social .box h4 {
-  color: #e6005a;
-  margin-top: 30px;
-}
-
-/* FOOTER */
-
-/* LOGIN */
-
-.banner-login .card {
-  background-color: #e5e5e5;
-  height: 450px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.banner-login a {
-  color: white;
-  text-decoration: none;
-}
-
-.banner-login #div_erros_login {
-  margin-top: 15px;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* FORMULARIO */
-
 input {
   height: 30px;
   border: 2px solid #e6005a;
@@ -202,31 +61,8 @@ input {
   align-self: center;
 }
 
-.div_form {
-  display: flex;
-  flex-direction: column;
-}
-
-.loading-div {
-  width: 50px;
-  /* border: 3px solid pink; */
-  margin: auto;
-  display: none;
-}
-
-.loading-div img {
-  height: 50px;
-  width: 50px;
-}
-
-
-
 /* PAGINA DOS GRÁFICOS  --------------------------- */
-.janela {
-  display: flex;
-  width: 100vw;
-  /* height: 100vh; */
-}
+
 
 .header-left a {
   text-decoration: none;
@@ -248,102 +84,8 @@ input {
   background-color: var(--blue);
 }
 
-.dash-right {
-  display: flex;
-  width: 75%;
-  height: fit-content;
-  background-color: #161618;
-  position: relative;
-  top: 0;
-  left: 25%;
-}
+
 
 .header-left h1 {
   color: var(--white);
 }
-
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hello h3 {
-  color: var(--bege);
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.hello h3 span {
-  font-weight: 800;
-}
-
-.btn-nav {
-  background-color: var(--bege);
-  color: var(--blue);
-  padding: 0.7rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 0.813rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.4s, color 0.4s, transform 0.4s;
-}
-
-.btn-nav:hover {
-  background-color: #c7edff;
-  transform: scale(1.1);
-}
-
-.btn-nav-white {
-  width: 40%;
-  background-color: transparent;
-  border: 0.12rem solid var(--bege);  
-  border-radius: 0.8125rem;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white {
-  background-color: #c7edff;
-  transform: scale(1.1);
-}
-
-.btn-nav-white h3 {
-  color: var(--bege);
-  padding: 0;
-  margin: 0;
-  font-weight: 600; 
-}
-
-.btn-nav-white:hover {
-  background-color: var(--bege);
-}
-
-.btn-nav-white h3:hover {
-  color: var(--blue);
-}
-
-.btn-nav h3,
-.btn-logout h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-logout {
-  background-color: var(--bege);
-  color: var(--blue);
-  padding: 0.4rem 2rem;
-  font-size: 1.2rem;
-  margin: 0.625rem 1.375rem;
-  border-radius: .5rem; 
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.4s, color 0.4s, transform 0.4s;
-}
-
-.btn-logout:hover {
-  width: 70px;
-  text-align: center;
-  transition: 8s;
-}
-
