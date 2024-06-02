@@ -21,11 +21,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-
 .header {
   color: #2ab6cc;
   border-bottom: 3px solid #32b9cd;
@@ -42,6 +37,7 @@ body {
   text-decoration: none;
   color: #e3b062;
 }
+
 input {
   height: 30px;
   border: 2px solid #e6005a;
@@ -62,8 +58,6 @@ input {
 }
 
 /* PAGINA DOS GRÁFICOS  --------------------------- */
-
-
 .header-left a {
   text-decoration: none;
   color: white;
@@ -83,8 +77,6 @@ input {
   border-right: 0.3125rem solid var(--brow-primary);
   background-color: var(--blue);
 }
-
-
 
 .header-left h1 {
   color: var(--white);

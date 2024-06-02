@@ -14,7 +14,6 @@
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
         .card {
             display: flex;
@@ -33,18 +32,12 @@
             </div>
 
             <div class="btn-nav">
-                <h3>Livros</h3>
+                <h3>Gráficos</h3>
             </div>
 
             <div class="btn-nav-white">
                 <a href="./experiencia.html">
-                    <h3>Minha Experiência</h3>
-                </a>
-            </div>
-
-            <div class="btn-nav-white">
-                <a href="./mural.html">
-                    <h3>Diga algo</h3>
+                    <h3>Livros</h3>
                 </a>
             </div>
 
@@ -54,7 +47,7 @@
 
         </div>
 
-        <div id="img_fundo" class="dash" style="height: 100vh;">
+        <div id="img_fundo" class="dash">
             <div class="regua">
                 <div class="item-regua" id="poucoacesso">
                     <h4>Abaixo da Média</h4>
@@ -69,15 +62,9 @@
                     <h2>Muitos usuários escolhem seu livro</h2>
                 </div><br>
             </div><br><br>
-            
-            <!-- <div class="grafico" style="width: 60%; margin-left: 20%;">
-                <canvas id="mychart"></canvas>
-            </div> -->
             <div>
-  <canvas id="myChart"></canvas>
-</div>
-
-
+                <canvas id="myChart"></canvas>
+            </div>
         </div>
     </div>
 </body>
@@ -134,10 +121,10 @@
                                     label: "LIVROS PREFERIDOS DOS USUÁRIOS",   
                                     data: qtd,  
                                     color: "#F7DF38",
-                                    backgroundColor: "#304473",
+                                    backgroundColor: "#164C5D",
                                     fontSize: 25,
                                     fontFamily: "'Permanent Marker', cursive;",
-                                    borderColor: "#0B1E38",
+                                    borderColor: "#F7DF38",
                                     scaleOverride: true,
                                     scaleSteps: 1,
                                     scaleStartValue: 0,
