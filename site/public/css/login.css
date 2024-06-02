@@ -24,6 +24,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* background: url(../assets/img/image\ 2.png) no-repeat; */
+  /* background: url("https://images.pexels.com/photos/15591241/pexels-photo-15591241/free-photo-of-preto-e-branco-p-b-folhas-livro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat; */
   background: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
   background-position: center;
   background-size: cover;

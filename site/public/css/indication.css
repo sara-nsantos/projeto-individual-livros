@@ -15,18 +15,17 @@
     --cinza-texto: #21272A;
 }
 
-.books_indications {
+/* .books_indications {
     background-color: #c2925a;
-}
+} */
 
 .books_indications h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3% 0 0 0;
+    margin: 2% 0 0 0;
     font-size: 2.75rem;
 /* margin: % 0% 1% 0; */
-    background-color: #26bd76d2;
 }
 
 .books_indications .paragrafo {
@@ -37,12 +36,12 @@
 .indication_content {
     margin: 0 6% 4% 6%;
     padding: 0 3%;
-    background-color: #859AA0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-radius: 70px 10px;
-    /* gap: 50px; */
+    background-color: var(--rose);
+    background-color: rgba(224, 206, 186, 0.13); 
 }
 
 .indication_content img {
@@ -63,7 +62,6 @@
     flex-direction: column;
     text-align: justify;
     margin-top: 3%;
-    background-color: rgb(240, 220, 190);
 }  
 
 .content .text {

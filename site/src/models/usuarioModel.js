@@ -19,7 +19,7 @@ function entrar(email, senha) {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-    //  ATRAVÉS DA VAR QUE FOI PRO JSON E VIROU OBJ (QUADROS), ADD NA QUERY DO BANCO - PROF. RAFA
+
 function cadastrar(nome, email, senha, quadros) {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar():", nome, email, senha, quadros);
     var instrucao = `
@@ -28,8 +28,7 @@ function cadastrar(nome, email, senha, quadros) {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-    //  PRECISEI CRIAR UMA NOVA FUNÇÃO... PARA CONSEGUIR PEGAR OS DADOS DO BANCO E PLOTAR NO GRAF, SO......
-    //  PELAS VARIÁVEIS DE SESSÃO EU PUXEI OS VALORES, CONTEI, AGRUPEI E PLOTEI TUDO NO GRÁFICO. - AULAS DE PI & BD
+
 function plotargrafico() {
     console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function plotargrafico():");
     var instrucao = `
@@ -39,7 +38,6 @@ function plotargrafico() {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
-    //  EXPORTEI A FUNÇÃO - SEGUINDO O MODELO DA API...
 module.exports = {
     entrar,
     cadastrar,
