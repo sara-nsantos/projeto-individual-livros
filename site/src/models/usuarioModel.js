@@ -43,4 +43,4 @@ module.exports = {
     cadastrar,
     listar,
     plotargrafico
-};
+}

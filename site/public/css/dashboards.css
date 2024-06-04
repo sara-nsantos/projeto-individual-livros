@@ -192,7 +192,8 @@ body {
 
 #poucoacesso {
   display: none;
-  background-color: #c63637;
+  background-color: #CE5859;
+  
 }
 
 #poucoacesso h2 {
@@ -202,11 +203,11 @@ body {
 
 #medioacesso {
   display: none;
-  background-color: #ffff65;
+  background-color: #FCFF73;
 }
 
 #medioacesso h2 {
-  color: #455000;
+  color: #8A7402;
 }
 
 #muitoacesso {
