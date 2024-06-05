@@ -28,19 +28,17 @@ body {
 
 /* Começo da dashbord */
 #myChart {
-  width: 37.5rem;
-  border: 1px solid rgba(216, 216, 216, 0.473);
-  margin-bottom:7%;
+  width: 39.5rem;
 }
 
 .dash {
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  width: 60%;
+  width: 70%;
   position: relative;
   top: 0;
-  left: 30%;
+  left: 25%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -51,8 +49,8 @@ body {
   background-color: var(--bege);
   border-radius: 30px;
   height: 80vh;
-  border: 2px solid #b5cfd6a9;
-  box-shadow: rgba(100, 108, 111, 0.253) 0px 7px 29px 0px;
+  border: 1px solid #b5cfd6a9;
+  box-shadow: rgba(121, 202, 231, 0.438) 0px 7px 29px 0px;
 }
 
 /* paragrafo - olá, usuario */
