@@ -22,10 +22,8 @@
 /* pagina mural */
 body {
   font-family: "Poppins", sans-serif; 
-  /* background: url(../assets/img/photo.jpeg) no-repeat; 
-    background-size: cover; */
   background-color: var(--bege);
-  background: url(https://img.freepik.com/fotos-gratis/textura-de-papelao_95678-72.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=ais);
+  /* background: url(https://img.freepik.com/fotos-gratis/textura-de-papelao_95678-72.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711065600&semt=ais); */
 }
 
 /* Começo da dashbord */
@@ -53,8 +51,8 @@ body {
   background-color: var(--bege);
   border-radius: 30px;
   height: 80vh;
-  border: 2px solid var(--blue);
-  box-shadow: rgba(100, 100, 111, 0.253) 0px 7px 29px 0px;
+  border: 2px solid #b5cfd6a9;
+  box-shadow: rgba(100, 108, 111, 0.253) 0px 7px 29px 0px;
 }
 
 /* paragrafo - olá, usuario */
@@ -67,7 +65,7 @@ body {
 .hello h3 {
   color: var(--bege);
   font-weight: 300; 
-  font-size: 1.2rem;
+  font-size: 1.45rem;
 }
 
 .hello h3 span {
