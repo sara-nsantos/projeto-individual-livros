@@ -28,6 +28,7 @@ body {
 
 /* Começo da dashbord */
 #myChart {
+  margin-top: -2%; 
   width: 39.5rem;
 }
 
