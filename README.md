@@ -1,10 +1,16 @@
-# Eyre - plataforma literária 
+# Eyre - plataforma literária
 
-O meu propósito como uma amante de livros é proporcionar um espaço acolhedor e respeitoso para a comunidade literária, onde todos possam compartilhar sua paixão pela leitura e descobrir novos horizontes através das páginas dos livros. Busco incentivar novas pessoas a lerem e a se aventurarem nessa imersão literária. Enfatizando a importância e as influências dessa prática em minha vida. 
+<div style="display: flex; align-items: flex-start; flex-wrap: nowrap;">
+    <div style="flex: 0 0 400px; margin-right: 0px;">
+        <img src="https://github.com/sara-nsantos/projeto-individual-livros/assets/161996102/44093331-dd1b-4796-9a23-4cf268d956f3" alt="logo-footer" style="width: 20%; height: auto;">
+    </div3
+    <div style="flex: 1;">
+        <p style="margin: 0;">O meu propósito como uma amante de livros é proporcionar um espaço acolhedor e respeitoso para a comunidade literária, onde todos possam compartilhar sua paixão pela leitura e descobrir novos horizontes através das páginas dos livros. Busco incentivar novas pessoas a lerem e a se aventurarem nessa imersão literária. Enfatizando a importância e as influências dessa prática em minha vida.</p>
+        <p style="margin: 0;">Destacando a importância da leitura e o quanto ela é enriquecedora para expandir nosso conhecimento e promover o pensamento crítico, é crucial ressaltar que os livros devem ser acessíveis a todos. Isso garante o acesso à educação e à cultura para a comunidade brasileira, promovendo inclusão e igualdade de oportunidades para todos.</p>
+        <p style="margin: 0;">O poder das páginas me transforma, guiando-me a explorar novas histórias e conhecimentos, expandindo minha imaginação, criatividade e conhecimento. Pretendo não guardar esse conhecimento somente comigo, mas com todos que estiverem abertos a perpetuar está história. Este foi um projeto onde pude demonstrar a minha paixão pela literatura e a forma que isso foi impactante para mim.</p>
+    </div>
+</div>
 
-Destacando a importância da leitura e o quanto ela é enriquecedora para expandir nosso conhecimento e promover o pensamento crítico, é crucial ressaltar que os livros devem ser acessíveis a todos. Isso garante o acesso à educação e à cultura para a comunidade brasileira, promovendo inclusão e igualdade de oportunidades para todos.  
-
-O poder das páginas me transforma, guiando-me a explorar novas histórias e conhecimentos, expandindo minha imaginação, criatividade e conhecimento. Pretendo não guardar esse conhecimento somente comigo, mas com todos que estiverem abertos a perpetuar está história. Este foi um projeto onde pude demonstrar a minha paixão pela literatura e a forma que isso foi impactante para mim.
 
 
 ## Tecnologias utilizadas:
